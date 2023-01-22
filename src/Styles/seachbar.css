@@ -1,0 +1,42 @@
+.searchbar{
+    width:100%;
+    height: 70px;
+  
+    background-color: rgb(44, 43, 43);
+}
+
+.searchinputs{
+    margin-left: 50px;
+   
+}
+.searchinputs input{
+    width:600px;
+height: 50px;
+margin-top:10px;
+background-color: rgb(65, 64, 64);
+border-radius: 24px;
+color:white;
+padding: 25px;
+}
+.searchinputs button{
+    height: 50px;
+    width:200px; 
+    border: 2px solid rgb(199, 195, 195); 
+    background-color: rgba(0, 0, 0, 0.473);
+    color:white;
+ border-radius: 25px;
+    margin-left: 20px;
+}
+
+.movielists{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    padding: 25px;
+    color: white;
+    position: relative;
+}
+.image-movie img {
+    border: 3px solid #d9c40f;;
+}

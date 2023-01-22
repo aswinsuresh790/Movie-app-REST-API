@@ -1,0 +1,18 @@
+.latest-movie{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    padding: 25px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 30px;
+   
+}
+.latest-movie img{
+    border: 3px solid yellow;
+}
+.latest-movie a{
+    color:white;
+    text-decoration: none;
+}
