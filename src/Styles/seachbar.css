@@ -7,6 +7,7 @@
 
 .searchinputs{
     margin-left: 50px;
+
    
 }
 .searchinputs input{
@@ -39,4 +40,19 @@ padding: 25px;
 }
 .image-movie img {
     border: 3px solid #d9c40f;;
+}
+
+
+.movielists a{
+    color:white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.movielists a:hover{
+    color:rgb(196, 196, 23);
+}
+@media screen  and (max-width:550px) {
+    .searchinputs{
+        margin-top: 451px;    
+    }   
 }

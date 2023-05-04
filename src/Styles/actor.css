@@ -1,0 +1,32 @@
+.full-actor-detail{
+    background-color: rgb(56, 54, 54);
+    color: white;
+    font-family: 'Nexa';
+    font-weight: 300;
+}
+.actorpage{
+    background-color: black;
+}
+.actor-name{
+    border-bottom: 3px  solid rgb(163, 165, 19);
+font-size: 1.8rem;
+border-width: 4px;
+
+}
+.actor-bio{
+    font-size: 1.2rem;
+}
+.knowfor{
+    color:white;
+    font-size: 1.9rem;
+}
+.prev-movies{
+    justify-content: space-between;
+    color:white;
+    font-family: 'Nexa';
+}
+.actor-lists a{
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+}

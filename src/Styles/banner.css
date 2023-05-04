@@ -19,7 +19,7 @@
   /* From https://css.glass */
 background: rgba(26, 25, 25, 0.596);
 position: absolute;
-top:330px;
+top:300px;
 left: 30;
 /* From https://css.glass */
 /* From https://css.glass */
@@ -48,4 +48,10 @@ font-family: 'fright',sans-serif;
     color:rgb(255, 255, 255);
     
     font-family: 'fright',sans-serif;
+}
+@media screen and(min-width:500px) {
+
+  .image-title{
+    top:40px;
+  }
 }

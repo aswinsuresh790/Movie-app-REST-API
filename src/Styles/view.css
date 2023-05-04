@@ -44,3 +44,8 @@ font-family: 'Nexa';
     
 
 }
+.title-movie a{
+    text-decoration: none;
+    color:white;
+font-family: 'Nexa';
+}

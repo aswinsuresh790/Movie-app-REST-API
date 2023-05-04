@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import '../Styles/cast.css'
 import {  imageUrl } from './Url'
-
+import {Link} from "react-router-dom"
 
 
 
@@ -30,12 +30,16 @@ console.log(Array.isArray(castactor));
         <h3>Cast</h3>
     
 <div className='actor-list d-flex flex-wrap'>
+ 
     {castactor && Object.values(castactor).filter(actor => actor.known_for_department === "Acting").map((actor, index) => (
-    <div className='actors m-2'>
+ 
+ <div className='actors m-2'>
+   <Link to={`/actor/${actor.id}`}>
 <img src={actor.profile_path ?`${imageUrl+actor.profile_path}`:'https://cdn.pixabay.com/photo/2018/08/28/13/29/avatar-3637561_1280.png'} width='150px' ></img>
     <div key={index}>
       <p>{actor.name}</p>
     </div>
+    </Link>
     </div>
    ))}
   </div>

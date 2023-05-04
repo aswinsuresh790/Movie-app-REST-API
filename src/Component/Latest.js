@@ -28,7 +28,7 @@ const Latest = () => {
     <div>
 <div  className='latest-movie'>
     {latest.map((movie,index)=>(
-        <div>
+        <div className='latest-movie' style={{color:'white',textDecoration:'none'}}>
             <Link to={`/view/${movie.id}`}>
             <div key={index}><img width='300px' src={`${imageUrl+movie.poster_path}`}  alt='movie.title'></img></div>
             <div>{movie.title || movie.name  } </div>

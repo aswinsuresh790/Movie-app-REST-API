@@ -3,6 +3,9 @@ import axios from 'axios'
 import { imageUrl } from './Url';
 import '../Styles/seachbar.css'
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { FETCH_DATA_SUCCESS } from '../Redux/Moviereducer';
+import { initialTitlesState } from '../Redux/InitialState';
 const SeachBar = () => {
     const [searchQuery, setSearchQuery] = useState('')
     const [searchResults, setSearchResults] = useState([]);
@@ -11,7 +14,8 @@ const SeachBar = () => {
     //search hook for search movie 
    
     //   clear the input 
-
+const data=useSelector(state=>state )
+const dispatch=useDispatch()
     const handleSearch = async (e) => {
         e.preventDefault();
         try {
@@ -21,7 +25,8 @@ const SeachBar = () => {
         } catch (err) {
           console.error(err);
         }
-        
+        dispatch({type:FETCH_DATA_SUCCESS,
+          data:searchResults})
     
     }
 
@@ -45,10 +50,10 @@ const SeachBar = () => {
       {searchResults ? searchResults.length > 0 && (
         <div>
           <h2>Search Results</h2>
-          <div className='movielists '>
+          <div className='movielists '   style={{color:'white',textDecoration:'none'}}>
             {searchResults.map((result) =>(
                 
-                <Link to={`/view/${result.id}`}>
+                <Link to={`/view/${result.id}`} >
                 <div >
                     
                     <div className='image-movie'><img   width="300px" src={`${imageUrl+result.poster_path}`}  alt={result.title}></img> </div>

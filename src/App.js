@@ -10,6 +10,9 @@ import Latest from './Component/Latest';
 import {Routes,Route}  from 'react-router-dom'
 import Home from './Pages/Home';
 import ViewPage from './Pages/ViewPage'
+import ActorDetails from './Pages/ActorDetails';
+import Login from './Component/Login';
+import Addmovies from './Component/Addmovies';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("")
@@ -25,7 +28,10 @@ function App() {
      <>
      <Routes>
       <Route path='/' element={<Home/>}></Route>
-      <Route path='/view/:id' element={<ViewPage/>}></Route>
+      <Route path='/view/:id' element={<ViewPage/>}></  Route>
+      <Route path='/actor/:id' element={<ActorDetails/>}></Route>
+      <Route path='/add' element={<Addmovies/>}></Route>
+
 
 
 

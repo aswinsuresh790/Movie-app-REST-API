@@ -2,3 +2,8 @@
     background-color: black;
     color:white;
 }
+.actors a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
